@@ -120,6 +120,7 @@
 //     console.log(val);
 // });
 
+// arrow function
 // let arr=["vinchur","mumbai","pune"]
 
 // arr.forEach((val)=> // value at each index
@@ -128,9 +129,110 @@
 // });
 
 // we can print 3 properties at a time (like value, index/position , array )
-let arr=["vinchur","mumbai","pune","delhi"]
+// let arr=["vinchur","mumbai","pune","delhi"]
 
-arr.forEach((val , idx , arr)=> // value at each index
+// arr.forEach((val , idx , arr)=> // value at each index
+// {
+//     console.log(val.toUpperCase(),idx ,arr); // idx is index , arr is array.
+// });
+
+// ========================== PRACTICE QUESTOIN =================================
+//Q. For a given array numbers, print the square of eachh value using the forEAch loop 
+//---->
+// let num=[1,2,3,4,5]
+// num.forEach((num)=>  // arrow function is used ,num is call back function
+// {
+//     console.log(num*num);
+// });
+
+
+// MAP() FUNCTION :
+// let arr=[3,4,6]
+// let s=arr.map((val)=> {
+
+//     return val*2;
+// })
+// console.log(s);
+
+//FILTER() : 
+// let arr=[2,3,4,5,6,7];
+
+// let evenArray=arr.filter((val)=>
+// {
+//     // return val%2===0; // for odd val%2 !==0
+//     return val>3;
+// })
+// console.log(evenArray)
+
+//REDUCE() : use when find single value such as AVG, SUM ,GREATEST , SMALLEST,etc...
+//e.g 1)
+// let arr=[2,3,6,7];
+// const sum=arr.reduce((prev , curr)=>
+// {
+//    return prev + curr;
+// })
+// console.log(sum);
+
+//e.g 2)
+//to find large number :
+// let arr=[2,3,6,7];
+// const sum=arr.reduce((prev , curr)=>
+// {
+//    return prev > curr ? prev : curr ; // if prev is greater than curr print prev if not(?) then print curr is greater 
+// });
+// console.log(sum);
+
+
+//========================================= PRACTICE QUESTION ===============================================
+//Q.1 We are given array of marks of students. Filter out of the marks of student that scored 90+ .
+//--->
+
+// let marks=[78,98,87,67,74,93,99,91,89,90]
+// let desti= marks.filter((val)=>
+// {
+//    return val > 90;
+// })
+// console.log(desti);
+
+
+//Q.2 Take a number n as input from user. create an array of numbers from 1 to n .
+//--->
+let n = prompt("Enter the size of array :");
+let arr=[];
+for(let i=1;i<=n;i++)
 {
-    console.log(val.toUpperCase(),idx ,arr); // isx is index , arr is array.
-});
+   arr[i-1]=i;
+}
+console.log(arr);
+// use the reduce method to calculate sum of all numbers in the array.
+let sum=arr.reduce((prev ,curr)=>
+   {
+      return prev + curr;
+   })
+console.log("sum :"+sum);
+//use the reduce method to calculate product of all(factorial) numbers in the array.
+//--->
+let factorial=arr.reduce((prev ,curr)=>
+   {
+      return prev * curr;
+   })
+console.log("factorial :"+factorial);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
