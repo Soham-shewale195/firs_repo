@@ -176,11 +176,11 @@
 //e.g 2)
 //to find large number :
 // let arr=[2,3,6,7];
-// const sum=arr.reduce((prev , curr)=>
+// const lar ge=arr.reduce((prev , curr)=>
 // {
 //    return prev > curr ? prev : curr ; // if prev is greater than curr print prev if not(?) then print curr is greater 
 // });
-// console.log(sum);
+// console.log(large);
 
 
 //========================================= PRACTICE QUESTION ===============================================
