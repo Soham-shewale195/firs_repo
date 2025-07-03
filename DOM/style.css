@@ -32,3 +32,14 @@ button{
     padding-top: 50px;
     font-size: larger;
 }
+#box1{
+    height: 100px;
+    width: 150px;
+    background-color: yellow;
+    color: black;
+    text-decoration: solid;
+    text-align: center;
+    padding-top: 2cm;
+    border: 2px solid black;
+
+}
